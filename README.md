@@ -1,6 +1,6 @@
 # VideoLoadingView
 
-It's a video_loading_view which can customize its color, change its speed or control it by yourselves(register a listener).
+It's a loading view which can customize its color, change its speed or control it by yourselves(register a listener).
 
 Maybe it's suitable for those video playing layouts.
 
@@ -56,13 +56,35 @@ Or use Java code dynamically.
 
 ``` java
 
-     view = (VideoLoadingView) findViewById(R.id.videoLoadingView);
-     view.setArcColor(Color.GREEN);
-     view.setTriangleColor(Color.GREEN);
-     view.setSpeed(VideoLoadingViewSpeed.SPEED_FAST);  //Default: VideoLoadingViewSpeed.SPEED_MEDIUM
-     // view.setSpeed(VideoLoadingViewSpeed.SPEED_SLOW); 
-     view.start();  //Default: stop()
-     // view.pause();
-     // view.stop();
+    view = (VideoLoadingView) findViewById(R.id.videoLoadingView);
+    view.setArcColor(Color.GREEN);
+    view.setTriangleColor(Color.GREEN);
+    view.setSpeed(VideoLoadingViewSpeed.SPEED_FAST);  //Default: VideoLoadingViewSpeed.SPEED_MEDIUM
+    // view.setSpeed(VideoLoadingViewSpeed.SPEED_SLOW); 
+    view.start();  //Default: stop()
+    // view.pause();
+    // view.stop();
+
+```
+
+You can register a listener:
+
+```
+    view.registerVideoViewListener(new VideoLoadingView.VideoViewListener() {
+         @Override
+         public void onStart() {
+             Log.i(TAG, "video_loading_view onStart");
+         }
+
+         @Override
+         public void onPause(double progress) {
+             Log.i(TAG, "video_loading_view onPause, progress:" + progress);
+         }
+
+         @Override
+         public void onStop() {
+             Log.i(TAG, "video_loading_view onStop");
+         }
+     });
 
 ```
