@@ -44,8 +44,8 @@ Declare a VideoLoadingView inside your XML layout file:
         android:id="@+id/videoloadingview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:ArcColor="@color/cpb_blue"
-        app:TriangleColor="@color/cpb_blue_dark"
+        app:ArcColor="@color/green"
+        app:TriangleColor="@color/green"
         />
 
 </RelativeLayout>
@@ -59,5 +59,10 @@ Or use Java code dynamically.
      view = (VideoLoadingView) findViewById(R.id.videoLoadingView);
      view.setArcColor(Color.GREEN);
      view.setTriangleColor(Color.GREEN);
+     view.setSpeed(VideoLoadingViewSpeed.SPEED_FAST);  //Default: VideoLoadingViewSpeed.SPEED_MEDIUM
+     // view.setSpeed(VideoLoadingViewSpeed.SPEED_SLOW); 
+     view.start();  //Default: stop()
+     // view.pause();
+     // view.stop();
 
 ```
