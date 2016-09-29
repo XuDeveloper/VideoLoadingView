@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VideoLoadingView">
+        <attr name="ArcColor" format="color" />
+        <attr name="TriangleColor" format="color" />
+    </declare-styleable>
+</resources>

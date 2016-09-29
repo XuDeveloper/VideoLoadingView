@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.videoloadingviewdemo.MainActivity">
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/stop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/pause_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/stop_btn"
+        android:layout_alignRight="@+id/stop_btn"
+        android:layout_below="@+id/stop_btn"
+        android:layout_marginTop="14dp"
+        android:text="Pause" />
+
+    <com.xu.library.VideoLoadingView
+        android:id="@+id/videoLoadingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stop_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        app:ArcColor="@color/colorPrimaryDark"
+        app:TriangleColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Created by Xu \n https://github.com/XuDeveloper/Video_Loading_View"
+        android:textStyle="bold" />
+
+    <com.xu.video_loading_view.VideoLoadingView
+        android:id="@+id/videoLoadingView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/videoLoadingView"
+        android:layout_alignLeft="@+id/videoLoadingView"
+        android:layout_alignStart="@+id/videoLoadingView"
+        android:layout_marginBottom="40dp" />
+</RelativeLayout>
