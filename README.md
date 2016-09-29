@@ -56,8 +56,8 @@ Or use Java code dynamically.
 
 ``` java
 
-        view = (VideoLoadingView) findViewById(R.id.videoLoadingView);
-        view.setArcColor(Color.GREEN);
-        view.setTriangleColor(Color.GREEN);
+     view = (VideoLoadingView) findViewById(R.id.videoLoadingView);
+     view.setArcColor(Color.GREEN);
+     view.setTriangleColor(Color.GREEN);
 
 ```
