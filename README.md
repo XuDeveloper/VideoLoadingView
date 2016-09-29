@@ -1,4 +1,4 @@
-# Video_Loading_View
+# VideoLoadingView
 
 It's a video_loading_view which can customize its color, change its speed or control it by yourselves(register a listener).
 
@@ -27,7 +27,7 @@ Maybe it's suitable for those video playing layouts.
 
 ### Usage
 
-#### CircleLoadingView
+#### VideoLoadingView
 
 Declare a VideoLoadingView inside your XML layout file:
 
