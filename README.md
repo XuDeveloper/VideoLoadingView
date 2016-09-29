@@ -17,7 +17,7 @@ Maybe it's suitable for those video playing layouts.
   }
 
   dependencies {
-	    compile 'com.github.XuDeveloper:Video_Loading_View:v1.0'
+	    compile 'com.github.XuDeveloper:VideoLoadingView:v1.0'
   }
 
 ```
@@ -40,13 +40,24 @@ Declare a VideoLoadingView inside your XML layout file:
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.xu.video_loading_view.VideoLoadingView
-        android:id="@+id/videoLoadingView"
+    <com.xu.library.VideoLoadingView
+        android:id="@+id/videoloadingview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:ArcColor="@color/colorPrimaryDark"
-        app:TriangleColor="@color/colorPrimary"
+        app:ArcColor="@color/cpb_blue"
+        app:TriangleColor="@color/cpb_blue_dark"
+        />
 
 </RelativeLayout>
+
+```
+
+Or use Java code dynamically.
+
+``` java
+
+        view = (VideoLoadingView) findViewById(R.id.videoLoadingView);
+        view.setArcColor(Color.GREEN);
+        view.setTriangleColor(Color.GREEN);
 
 ```
