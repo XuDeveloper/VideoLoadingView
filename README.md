@@ -6,7 +6,6 @@ Maybe it's suitable for those video playing layouts.
 
 ### Preview
 
-![VideoLoadingView-screenshot](https://raw.githubusercontent.com/xudeveloper/VideoLoadingView/master/docs/screen.gif)
 
 ### Integration
 
