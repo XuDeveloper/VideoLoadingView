@@ -1,16 +1,16 @@
 # VideoLoadingView
 
-[中文版](https://github.com/XuDeveloper/VideoLoadingView/blob/master/docs/README-ZH.md)
+[English Version](https://github.com/XuDeveloper/VideoLoadingView/blob/master/README.md)
 
-It's a loading view which can customize its color, change its speed or control it by yourselves(register a listener).
+这是一个加载界面，可以自定义颜色，可以改变转动的速度或者通过注册监听器的方式去控制这个界面。
 
-Maybe it's suitable for those video playing layouts.
+这个加载界面适合于播放视频的界面中。（比如加载或者缓存视频时引入此界面）
 
-### Preview
+### 预览
 
-![VideoLoadingView-screenshot](https://raw.githubusercontent.com/xudeveloper/VideoLoadingView/master/docs/screen.gif)
-
-### Integration
+ ![VideoLoadingView-screenshot](https://raw.githubusercontent.com/xudeveloper/VideoLoadingView/master/docs/screen.gif)
+ 
+### 导入
 
 #### Android Studio
 
@@ -29,12 +29,11 @@ Maybe it's suitable for those video playing layouts.
 ```
 #### Eclipse
 
-> Maybe you can copy my code to your project!
+> 可以复制我的源码到你的项目中！
 
-### Usage
+### 使用
 
-
-Declare a VideoLoadingView inside your XML layout file:
+可以在layout.xml文件中声明：
 
 ``` xml
 
@@ -57,7 +56,7 @@ Declare a VideoLoadingView inside your XML layout file:
 
 ```
 
-Or use Java code dynamically.
+或者使用Java代码动态生成VideoLoadingView对象：
 
 ``` java
 
@@ -72,7 +71,7 @@ Or use Java code dynamically.
 
 ```
 
-You can register a listener:
+你可以注册一个监听器：
 
 ```
     view.registerVideoViewListener(new VideoLoadingView.VideoViewListener() {
