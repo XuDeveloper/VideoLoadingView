@@ -52,7 +52,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
         android:gravity="center"
-        android:text="Created by Xu \n https://github.com/XuDeveloper/Video_Loading_View"
+        android:text="Created by Xu \n https://github.com/XuDeveloper/VideoLoadingView"
         android:textStyle="bold" />
 
     <com.xu.library.VideoLoadingView
