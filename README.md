@@ -1,6 +1,6 @@
-# Video_Loading_View
+# VideoLoadingView
 
-It's a video_loading_view which can customize its color, change its speed or control it by yourselves(register a listener).
+It's a loading view which can customize its color, change its speed or control it by yourselves(register a listener).
 
 Maybe it's suitable for those video playing layouts.
 
@@ -17,7 +17,7 @@ Maybe it's suitable for those video playing layouts.
   }
 
   dependencies {
-	    compile 'com.github.XuDeveloper:Video_Loading_View:v1.0'
+	    compile 'com.github.XuDeveloper:VideoLoadingView:v1.0'
   }
 
 ```
@@ -27,7 +27,7 @@ Maybe it's suitable for those video playing layouts.
 
 ### Usage
 
-#### CircleLoadingView
+#### VideoLoadingView
 
 Declare a VideoLoadingView inside your XML layout file:
 
@@ -40,13 +40,51 @@ Declare a VideoLoadingView inside your XML layout file:
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.xu.video_loading_view.VideoLoadingView
-        android:id="@+id/videoLoadingView"
+    <com.xu.library.VideoLoadingView
+        android:id="@+id/videoloadingview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:ArcColor="@color/colorPrimaryDark"
-        app:TriangleColor="@color/colorPrimary"
+        app:ArcColor="@color/green"
+        app:TriangleColor="@color/green"
+        />
 
 </RelativeLayout>
+
+```
+
+Or use Java code dynamically.
+
+``` java
+
+    view = (VideoLoadingView) findViewById(R.id.videoLoadingView);
+    view.setArcColor(Color.GREEN);
+    view.setTriangleColor(Color.GREEN);
+    view.setSpeed(VideoLoadingViewSpeed.SPEED_FAST);  //Default: VideoLoadingViewSpeed.SPEED_MEDIUM
+    // view.setSpeed(VideoLoadingViewSpeed.SPEED_SLOW); 
+    view.start();  //Default: stop()
+    // view.pause();
+    // view.stop();
+
+```
+
+You can register a listener:
+
+```
+    view.registerVideoViewListener(new VideoLoadingView.VideoViewListener() {
+         @Override
+         public void onStart() {
+             Log.i(TAG, "video_loading_view onStart");
+         }
+
+         @Override
+         public void onPause(double progress) {
+             Log.i(TAG, "video_loading_view onPause, progress:" + progress);
+         }
+
+         @Override
+         public void onStop() {
+             Log.i(TAG, "video_loading_view onStop");
+         }
+     });
 
 ```
