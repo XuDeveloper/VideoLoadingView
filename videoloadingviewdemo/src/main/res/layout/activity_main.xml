@@ -55,7 +55,7 @@
         android:text="Created by Xu \n https://github.com/XuDeveloper/Video_Loading_View"
         android:textStyle="bold" />
 
-    <com.xu.video_loading_view.VideoLoadingView
+    <com.xu.library.VideoLoadingView
         android:id="@+id/videoLoadingView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

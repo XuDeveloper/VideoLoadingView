@@ -6,7 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.xu.video_loading_view.VideoLoadingView;
+import com.xu.library.VideoLoadingView.VideoLoadingViewSpeed;
+import com.xu.library.VideoLoadingView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         view1 = (VideoLoadingView) findViewById(R.id.videoLoadingView2);
 //        view1.setArcColor(Color.GREEN);
 //        view1.setTriangleColor(Color.GREEN);
+        view1.setSpeed(VideoLoadingViewSpeed.SPEED_SLOW);
         view1.start();
         startBtn = (Button) findViewById(R.id.start_btn);
         stopBtn = (Button) findViewById(R.id.stop_btn);

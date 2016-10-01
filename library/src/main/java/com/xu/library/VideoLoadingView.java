@@ -324,7 +324,7 @@ public class VideoLoadingView extends View {
         requestLayout();
     }
 
-    class VideoLoadingViewSpeed {
+    public class VideoLoadingViewSpeed {
         public static final int SPEED_SLOW = 2;
         public static final int SPEED_MEDIUM = 3;
         public static final int SPEED_FAST = 5;
