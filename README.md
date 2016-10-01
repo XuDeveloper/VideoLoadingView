@@ -4,6 +4,10 @@ It's a loading view which can customize its color, change its speed or control i
 
 Maybe it's suitable for those video playing layouts.
 
+### Preview
+
+![VideoLoadingView-screenshot](https://raw.githubusercontent.com/xudeveloper/VideoLoadingView/master/docs/screen.gif)
+
 ### Integration
 
 #### Android Studio
