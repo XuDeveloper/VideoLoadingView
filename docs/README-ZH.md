@@ -93,7 +93,7 @@
 
 ```
 
-##**License**
+##**协议**
 
 ```license
 Copyright [2016] XuDeveloper
